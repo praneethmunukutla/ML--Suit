@@ -1,0 +1,23 @@
+{
+  "run_id": "run_04ffcfd846",
+  "status": "failed",
+  "progress": 0.02,
+  "stage": "failed",
+  "created_at": "2026-08-23T18:05:28+00:00",
+  "updated_at": "2026-08-23T18:05:28+00:00",
+  "leaderboard": [],
+  "error": "Target 'price' cannot also be a feature",
+  "dataset_id": "ds_4672ea362d",
+  "dataset_name": "houses",
+  "feature_columns": [
+    "price"
+  ],
+  "target_column": "price",
+  "requested_task": null,
+  "requested_metric": null,
+  "requested_models": null,
+  "test_size": 0.2,
+  "cv_folds": 3,
+  "search_iter": 12,
+  "error_detail": null
+}

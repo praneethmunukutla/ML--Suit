@@ -1,0 +1,43 @@
+{
+  "model_id": "mdl_9eb505cb87",
+  "path": "/Users/praneethmunukutla/Documents/SVM_practical_practice/ml_suite/storage/models/mdl_9eb505cb87.joblib",
+  "created_at": "2026-08-23T18:12:58+00:00",
+  "size_kb": 1.9,
+  "algorithm": "ElasticNet",
+  "task": "regression",
+  "dataset_id": "ds_fe57ea7c64",
+  "dataset_name": "houses_regression",
+  "target_column": "price",
+  "feature_columns": [
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "age_years",
+    "neighborhood",
+    "has_garage"
+  ],
+  "used_features": [
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "age_years",
+    "neighborhood",
+    "has_garage"
+  ],
+  "dropped_features": [],
+  "class_labels": null,
+  "primary_metric": "r2",
+  "metrics": {
+    "r2": 0.887817,
+    "rmse": 43028.985866,
+    "mae": 26214.875245,
+    "explained_variance": 0.88936,
+    "neg_rmse": -43028.985866,
+    "neg_mae": -26214.875245
+  },
+  "best_params": {
+    "l1_ratio": 0.7,
+    "alpha": 0.006105
+  },
+  "run_id": "run_e2a6c05ec3"
+}

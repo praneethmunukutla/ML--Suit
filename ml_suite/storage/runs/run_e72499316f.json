@@ -1,0 +1,579 @@
+{
+  "run_id": "run_e72499316f",
+  "status": "succeeded",
+  "progress": 1.0,
+  "stage": "complete",
+  "created_at": "2026-08-23T18:15:04+00:00",
+  "updated_at": "2026-08-23T18:15:07+00:00",
+  "leaderboard": [
+    {
+      "model": "GradientBoosting",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.948216,
+        "rmse": 2021.899164,
+        "mae": 1421.83465,
+        "explained_variance": 0.948868,
+        "neg_rmse": -2021.899164,
+        "neg_mae": -1421.83465
+      },
+      "cv_score": 0.901071,
+      "best_params": {
+        "subsample": 0.8,
+        "n_estimators": 300,
+        "max_depth": 3,
+        "learning_rate": 0.05
+      },
+      "fit_seconds": 0.56,
+      "n_candidates": 12,
+      "rank": 1,
+      "primary_score": 0.948216,
+      "feature_importance": [
+        {
+          "feature": "enginesize",
+          "importance": 0.568622
+        },
+        {
+          "feature": "curbweight",
+          "importance": 0.201748
+        },
+        {
+          "feature": "highwaympg",
+          "importance": 0.04893
+        },
+        {
+          "feature": "horsepower",
+          "importance": 0.044319
+        },
+        {
+          "feature": "CarName",
+          "importance": 0.019116
+        },
+        {
+          "feature": "wheelbase",
+          "importance": 0.017295
+        },
+        {
+          "feature": "cylindernumber_four",
+          "importance": 0.01727
+        },
+        {
+          "feature": "carwidth",
+          "importance": 0.01402
+        },
+        {
+          "feature": "carlength",
+          "importance": 0.013152
+        },
+        {
+          "feature": "peakrpm",
+          "importance": 0.009102
+        },
+        {
+          "feature": "boreratio",
+          "importance": 0.007166
+        },
+        {
+          "feature": "carbody_convertible",
+          "importance": 0.00557
+        },
+        {
+          "feature": "stroke",
+          "importance": 0.005286
+        },
+        {
+          "feature": "compressionratio",
+          "importance": 0.004486
+        },
+        {
+          "feature": "fuelsystem_mpfi",
+          "importance": 0.004343
+        },
+        {
+          "feature": "citympg",
+          "importance": 0.003963
+        },
+        {
+          "feature": "carheight",
+          "importance": 0.003482
+        },
+        {
+          "feature": "drivewheel_rwd",
+          "importance": 0.002363
+        },
+        {
+          "feature": "symboling",
+          "importance": 0.001694
+        },
+        {
+          "feature": "carbody_hardtop",
+          "importance": 0.001556
+        },
+        {
+          "feature": "enginetype_ohc",
+          "importance": 0.001145
+        },
+        {
+          "feature": "enginetype_l",
+          "importance": 0.000884
+        },
+        {
+          "feature": "carbody_sedan",
+          "importance": 0.000806
+        },
+        {
+          "feature": "aspiration_std",
+          "importance": 0.000668
+        },
+        {
+          "feature": "aspiration_turbo",
+          "importance": 0.000637
+        }
+      ],
+      "diagnostics": {
+        "actual": [
+          30760.0,
+          17859.167,
+          9549.0,
+          11850.0,
+          28248.0,
+          7799.0,
+          7788.0,
+          9258.0,
+          10198.0,
+          7775.0,
+          13295.0,
+          8238.0,
+          18280.0,
+          9988.0,
+          40960.0,
+          6488.0,
+          5151.0,
+          12629.0,
+          8189.0,
+          9960.0,
+          8495.0,
+          13499.0,
+          8249.0,
+          6479.0,
+          6692.0,
+          41315.0,
+          9639.0,
+          13415.0,
+          7999.0,
+          12940.0,
+          25552.0,
+          6229.0,
+          7898.0,
+          21485.0,
+          7689.0,
+          28176.0,
+          11259.0,
+          10945.0,
+          8916.5,
+          14489.0,
+          7463.0
+        ],
+        "predicted": [
+          35152.234157,
+          18599.17388,
+          8892.922513,
+          12712.558705,
+          29967.743752,
+          6704.20103,
+          8154.405852,
+          7728.232968,
+          10023.57555,
+          8270.908323,
+          13860.57762,
+          7429.921782,
+          14441.782084,
+          10750.814144,
+          41792.048535,
+          6247.445096,
+          4901.817982,
+          13820.575781,
+          8534.624251,
+          9664.67867,
+          10113.353826,
+          16471.74535,
+          6692.693728,
+          6099.33943,
+          6802.067953,
+          35604.753145,
+          9599.980983,
+          16246.748563,
+          6745.97657,
+          16271.975181,
+          31439.339605,
+          6439.583453,
+          7005.288425,
+          19200.383512,
+          8146.213497,
+          30122.343466,
+          10690.790235,
+          12510.314789,
+          6585.473863,
+          13895.69261,
+          8057.487158
+        ],
+        "residuals": [
+          -4392.234157,
+          -740.00688,
+          656.077487,
+          -862.558705,
+          -1719.743752,
+          1094.79897,
+          -366.405852,
+          1529.767032,
+          174.42445,
+          -495.908323,
+          -565.57762,
+          808.078218,
+          3838.217916,
+          -762.814144,
+          -832.048535,
+          240.554904,
+          249.182018,
+          -1191.575781,
+          -345.624251,
+          295.32133,
+          -1618.353826,
+          -2972.74535,
+          1556.306272,
+          379.66057,
+          -110.067953,
+          5710.246855,
+          39.019017,
+          -2831.748563,
+          1253.02343,
+          -3331.975181,
+          -5887.339605,
+          -210.583453,
+          892.711575,
+          2284.616488,
+          -457.213497,
+          -1946.343466,
+          568.209765,
+          -1565.314789,
+          2331.026137,
+          593.30739,
+          -594.487158
+        ]
+      }
+    },
+    {
+      "model": "RandomForest",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.929796,
+        "rmse": 2354.183458,
+        "mae": 1541.057146,
+        "explained_variance": 0.930059,
+        "neg_rmse": -2354.183458,
+        "neg_mae": -1541.057146
+      },
+      "cv_score": 0.897316,
+      "best_params": {
+        "n_estimators": 400,
+        "min_samples_split": 2,
+        "max_features": "sqrt",
+        "max_depth": 20
+      },
+      "fit_seconds": 1.07,
+      "n_candidates": 12,
+      "rank": 2,
+      "primary_score": 0.929796
+    },
+    {
+      "model": "SVR",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.928442,
+        "rmse": 2376.774767,
+        "mae": 1791.834541,
+        "explained_variance": 0.931051,
+        "neg_rmse": -2376.774767,
+        "neg_mae": -1791.834541
+      },
+      "cv_score": 0.858026,
+      "best_params": {
+        "kernel": "rbf",
+        "gamma": 0.01,
+        "epsilon": 0.1,
+        "C": 43.287613
+      },
+      "fit_seconds": 0.12,
+      "n_candidates": 12,
+      "rank": 3,
+      "primary_score": 0.928442
+    },
+    {
+      "model": "XGBoost",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.921662,
+        "rmse": 2486.824618,
+        "mae": 1790.772187,
+        "explained_variance": 0.928393,
+        "neg_rmse": -2486.824618,
+        "neg_mae": -1790.772187
+      },
+      "cv_score": 0.898118,
+      "best_params": {
+        "subsample": 0.7,
+        "n_estimators": 100,
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "colsample_bytree": 0.85
+      },
+      "fit_seconds": 0.5,
+      "n_candidates": 12,
+      "rank": 4,
+      "primary_score": 0.921662
+    },
+    {
+      "model": "KNeighbors",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.914399,
+        "rmse": 2599.559259,
+        "mae": 1686.639299,
+        "explained_variance": 0.916512,
+        "neg_rmse": -2599.559259,
+        "neg_mae": -1686.639299
+      },
+      "cv_score": 0.857569,
+      "best_params": {
+        "weights": "distance",
+        "p": 1,
+        "n_neighbors": 3
+      },
+      "fit_seconds": 0.14,
+      "n_candidates": 12,
+      "rank": 5,
+      "primary_score": 0.914399
+    },
+    {
+      "model": "ElasticNet",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.863549,
+        "rmse": 3282.074626,
+        "mae": 2365.103843,
+        "explained_variance": 0.866353,
+        "neg_rmse": -3282.074626,
+        "neg_mae": -2365.103843
+      },
+      "cv_score": 0.829612,
+      "best_params": {
+        "l1_ratio": 0.1,
+        "alpha": 0.031623
+      },
+      "fit_seconds": 0.11,
+      "n_candidates": 12,
+      "rank": 6,
+      "primary_score": 0.863549
+    },
+    {
+      "model": "Lasso",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.860189,
+        "rmse": 3322.233928,
+        "mae": 2415.893849,
+        "explained_variance": 0.862248,
+        "neg_rmse": -3322.233928,
+        "neg_mae": -2415.893849
+      },
+      "cv_score": 0.821422,
+      "best_params": {
+        "alpha": 5.455595
+      },
+      "fit_seconds": 0.19,
+      "n_candidates": 12,
+      "rank": 7,
+      "primary_score": 0.860189
+    },
+    {
+      "model": "LinearRegression",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.859196,
+        "rmse": 3334.010969,
+        "mae": 2506.92959,
+        "explained_variance": 0.861522,
+        "neg_rmse": -3334.010969,
+        "neg_mae": -2506.92959
+      },
+      "cv_score": 0.804041,
+      "best_params": {
+        "fit_intercept": false
+      },
+      "fit_seconds": 0.18,
+      "n_candidates": 2,
+      "rank": 8,
+      "primary_score": 0.859196
+    },
+    {
+      "model": "Ridge",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.854344,
+        "rmse": 3390.97103,
+        "mae": 2502.964011,
+        "explained_variance": 0.856259,
+        "neg_rmse": -3390.97103,
+        "neg_mae": -2502.964011
+      },
+      "cv_score": 0.826191,
+      "best_params": {
+        "fit_intercept": true,
+        "alpha": 12.74275
+      },
+      "fit_seconds": 0.19,
+      "n_candidates": 12,
+      "rank": 9,
+      "primary_score": 0.854344
+    },
+    {
+      "model": "DecisionTree",
+      "status": "ok",
+      "metrics": {
+        "r2": 0.811688,
+        "rmse": 3855.661545,
+        "mae": 2852.760866,
+        "explained_variance": 0.841251,
+        "neg_rmse": -3855.661545,
+        "neg_mae": -2852.760866
+      },
+      "cv_score": 0.845387,
+      "best_params": {
+        "min_samples_split": 10,
+        "min_samples_leaf": 4,
+        "max_depth": null
+      },
+      "fit_seconds": 0.08,
+      "n_candidates": 12,
+      "rank": 10,
+      "primary_score": 0.811688
+    }
+  ],
+  "error": null,
+  "dataset_id": "ds_01323a9e5b",
+  "dataset_name": "CarPrice",
+  "feature_columns": [
+    "symboling",
+    "CarName",
+    "fueltype",
+    "aspiration",
+    "doornumber",
+    "carbody",
+    "drivewheel",
+    "enginelocation",
+    "wheelbase",
+    "carlength",
+    "carwidth",
+    "carheight",
+    "curbweight",
+    "enginetype",
+    "cylindernumber",
+    "enginesize",
+    "fuelsystem",
+    "boreratio",
+    "stroke",
+    "compressionratio",
+    "horsepower",
+    "peakrpm",
+    "citympg",
+    "highwaympg"
+  ],
+  "target_column": "price",
+  "requested_task": "regression",
+  "requested_metric": "r2",
+  "requested_models": [
+    "LinearRegression",
+    "Ridge",
+    "Lasso",
+    "ElasticNet",
+    "SVR",
+    "DecisionTree",
+    "RandomForest",
+    "GradientBoosting",
+    "KNeighbors",
+    "XGBoost"
+  ],
+  "test_size": 0.2,
+  "cv_folds": 3,
+  "search_iter": 12,
+  "task": "regression",
+  "task_reason": "specified by user",
+  "primary_metric": "r2",
+  "best_model": "GradientBoosting",
+  "best_score": 0.948216,
+  "model_id": "mdl_ec30c9a025",
+  "class_labels": null,
+  "preprocessing": {
+    "numeric": [
+      "symboling",
+      "wheelbase",
+      "carlength",
+      "carwidth",
+      "carheight",
+      "curbweight",
+      "enginesize",
+      "boreratio",
+      "stroke",
+      "compressionratio",
+      "horsepower",
+      "peakrpm",
+      "citympg",
+      "highwaympg"
+    ],
+    "categorical": [
+      "fueltype",
+      "aspiration",
+      "doornumber",
+      "carbody",
+      "drivewheel",
+      "enginelocation",
+      "enginetype",
+      "cylindernumber",
+      "fuelsystem"
+    ],
+    "high_cardinality": [
+      "CarName"
+    ],
+    "datetime": [],
+    "dropped": [],
+    "used_features": [
+      "symboling",
+      "wheelbase",
+      "carlength",
+      "carwidth",
+      "carheight",
+      "curbweight",
+      "enginesize",
+      "boreratio",
+      "stroke",
+      "compressionratio",
+      "horsepower",
+      "peakrpm",
+      "citympg",
+      "highwaympg",
+      "fueltype",
+      "aspiration",
+      "doornumber",
+      "carbody",
+      "drivewheel",
+      "enginelocation",
+      "enginetype",
+      "cylindernumber",
+      "fuelsystem",
+      "CarName"
+    ]
+  },
+  "n_train": 164,
+  "n_test": 41,
+  "elapsed_seconds": 3.18
+}

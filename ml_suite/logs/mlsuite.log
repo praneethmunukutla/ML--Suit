@@ -1,0 +1,62 @@
+{"ts": "2026-08-23T18:05:04", "level": "INFO", "logger": "numexpr.utils", "request_id": "-", "message": "NumExpr defaulting to 11 threads."}
+{"ts": "2026-08-23T18:05:05", "level": "INFO", "logger": "mlsuite.api", "request_id": "-", "message": "ML Suite v0.1.0 starting (storage=/Users/praneethmunukutla/Documents/SVM_practical_practice/ml_suite/storage)"}
+{"ts": "2026-08-23T18:05:20", "level": "INFO", "logger": "backend.registry.store", "request_id": "14f9b9fe8fc2", "message": "Saved dataset ds_4672ea362d (700 x 7) from file"}
+{"ts": "2026-08-23T18:05:20", "level": "INFO", "logger": "backend.training.jobs", "request_id": "33bd6a50629a", "message": "Queued run run_200fbe58cd"}
+{"ts": "2026-08-23T18:05:20", "level": "INFO", "logger": "backend.preprocessing.builder", "request_id": "-", "message": "Preprocessor: 4 numeric, 2 categorical, 0 high-card, 0 datetime, 0 dropped"}
+{"ts": "2026-08-23T18:05:20", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Training 10 candidate(s) for regression on 560 rows"}
+{"ts": "2026-08-23T18:05:22", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "LinearRegression   r2=0.8878  rmse=43032.3906  mae=26214.7957  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:05:23", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Ridge              r2=0.8878  rmse=43031.0925  mae=26214.8290  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:05:24", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Lasso              r2=0.8878  rmse=43031.3241  mae=26214.1435  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:05:24", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "ElasticNet         r2=0.8878  rmse=43031.3664  mae=26214.8229  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:05:24", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "SVR                r2=0.8897  rmse=42668.1569  mae=25765.3909  explained_variance=0.8897"}
+{"ts": "2026-08-23T18:05:24", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "DecisionTree       r2=0.8111  rmse=55828.7493  mae=41137.6698  explained_variance=0.8115"}
+{"ts": "2026-08-23T18:05:25", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "RandomForest       r2=0.8511  rmse=49566.5585  mae=32527.9874  explained_variance=0.8522"}
+{"ts": "2026-08-23T18:05:25", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "GradientBoosting   r2=0.8496  rmse=49818.9715  mae=31481.5768  explained_variance=0.8509"}
+{"ts": "2026-08-23T18:05:25", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "KNeighbors         r2=0.8079  rmse=56305.5967  mae=41562.3081  explained_variance=0.8114"}
+{"ts": "2026-08-23T18:05:25", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "XGBoost            r2=0.8570  rmse=48579.4140  mae=31059.0046  explained_variance=0.8577"}
+{"ts": "2026-08-23T18:05:25", "level": "INFO", "logger": "backend.registry.store", "request_id": "-", "message": "Registered model mdl_3c37039456 (SVR, regression)"}
+{"ts": "2026-08-23T18:05:25", "level": "INFO", "logger": "backend.training.jobs", "request_id": "-", "message": "Run run_200fbe58cd finished: best=SVR score=0.889691"}
+{"ts": "2026-08-23T18:05:28", "level": "INFO", "logger": "backend.training.predict", "request_id": "6aea0be36b1b", "message": "Scored 1 row(s) with mdl_3c37039456 (SVR)"}
+{"ts": "2026-08-23T18:05:28", "level": "WARNING", "logger": "mlsuite.api", "request_id": "b4a0857eed75", "message": "not_found on /api/runs/run_doesnotexist: Unknown run 'run_doesnotexist'"}
+{"ts": "2026-08-23T18:05:28", "level": "INFO", "logger": "backend.training.jobs", "request_id": "f2f5bf150c7b", "message": "Queued run run_04ffcfd846"}
+{"ts": "2026-08-23T18:05:28", "level": "WARNING", "logger": "backend.training.jobs", "request_id": "-", "message": "Run run_04ffcfd846 failed: Target 'price' cannot also be a feature"}
+{"ts": "2026-08-23T18:05:46", "level": "INFO", "logger": "mlsuite.api", "request_id": "-", "message": "Shutdown complete"}
+{"ts": "2026-08-23T18:05:47", "level": "INFO", "logger": "numexpr.utils", "request_id": "-", "message": "NumExpr defaulting to 11 threads."}
+{"ts": "2026-08-23T18:05:48", "level": "INFO", "logger": "mlsuite.api", "request_id": "-", "message": "ML Suite v0.1.0 starting (storage=/Users/praneethmunukutla/Documents/SVM_practical_practice/ml_suite/storage)"}
+{"ts": "2026-08-23T18:05:53", "level": "WARNING", "logger": "mlsuite.api", "request_id": "53524e8d4d4c", "message": "validation_error on /api/train: Target 'price' cannot also be a feature"}
+{"ts": "2026-08-23T18:06:01", "level": "INFO", "logger": "mlsuite.api", "request_id": "-", "message": "Shutdown complete"}
+{"ts": "2026-08-23T18:06:04", "level": "INFO", "logger": "numexpr.utils", "request_id": "-", "message": "NumExpr defaulting to 11 threads."}
+{"ts": "2026-08-23T18:06:05", "level": "INFO", "logger": "mlsuite.api", "request_id": "-", "message": "ML Suite v0.1.0 starting (storage=/Users/praneethmunukutla/Documents/SVM_practical_practice/ml_suite/storage)"}
+{"ts": "2026-08-23T18:11:19", "level": "INFO", "logger": "backend.registry.store", "request_id": "f6e8582d243f", "message": "Saved dataset ds_aa9ab121ad (700 x 7) from file"}
+{"ts": "2026-08-23T18:12:06", "level": "INFO", "logger": "backend.registry.store", "request_id": "7591d2a5758b", "message": "Saved dataset ds_fe57ea7c64 (700 x 7) from file"}
+{"ts": "2026-08-23T18:12:52", "level": "INFO", "logger": "backend.training.jobs", "request_id": "a1354fbc633b", "message": "Queued run run_e2a6c05ec3"}
+{"ts": "2026-08-23T18:12:52", "level": "INFO", "logger": "backend.preprocessing.builder", "request_id": "-", "message": "Preprocessor: 4 numeric, 2 categorical, 0 high-card, 0 datetime, 0 dropped"}
+{"ts": "2026-08-23T18:12:52", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Training 10 candidate(s) for regression on 560 rows"}
+{"ts": "2026-08-23T18:12:54", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "LinearRegression   r2=0.8878  rmse=43032.3906  mae=26214.7957  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:12:55", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Ridge              r2=0.8878  rmse=43031.0925  mae=26214.8290  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:12:55", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Lasso              r2=0.8878  rmse=43030.4449  mae=26213.6062  explained_variance=0.8893"}
+{"ts": "2026-08-23T18:12:56", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "ElasticNet         r2=0.8878  rmse=43028.9859  mae=26214.8752  explained_variance=0.8894"}
+{"ts": "2026-08-23T18:12:56", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "SVR                r2=0.8873  rmse=43126.8990  mae=26390.0465  explained_variance=0.8877"}
+{"ts": "2026-08-23T18:12:56", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "DecisionTree       r2=0.7849  rmse=59586.4120  mae=39745.6736  explained_variance=0.7861"}
+{"ts": "2026-08-23T18:12:57", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "RandomForest       r2=0.8511  rmse=49580.4708  mae=32693.6404  explained_variance=0.8522"}
+{"ts": "2026-08-23T18:12:57", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "GradientBoosting   r2=0.8523  rmse=49378.4537  mae=31624.6065  explained_variance=0.8536"}
+{"ts": "2026-08-23T18:12:57", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "KNeighbors         r2=0.8079  rmse=56305.5967  mae=41562.3081  explained_variance=0.8114"}
+{"ts": "2026-08-23T18:12:58", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "XGBoost            r2=0.8570  rmse=48579.4140  mae=31059.0046  explained_variance=0.8577"}
+{"ts": "2026-08-23T18:12:58", "level": "INFO", "logger": "backend.registry.store", "request_id": "-", "message": "Registered model mdl_9eb505cb87 (ElasticNet, regression)"}
+{"ts": "2026-08-23T18:12:58", "level": "INFO", "logger": "backend.training.jobs", "request_id": "-", "message": "Run run_e2a6c05ec3 finished: best=ElasticNet score=0.887817"}
+{"ts": "2026-08-23T18:14:26", "level": "INFO", "logger": "backend.registry.store", "request_id": "d59e11a7d8ef", "message": "Saved dataset ds_01323a9e5b (205 x 26) from file"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.jobs", "request_id": "752d14230f09", "message": "Queued run run_e72499316f"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.preprocessing.builder", "request_id": "-", "message": "Preprocessor: 14 numeric, 9 categorical, 1 high-card, 0 datetime, 0 dropped"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Training 10 candidate(s) for regression on 164 rows"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "LinearRegression   r2=0.8592  rmse=3334.0110  mae=2506.9296  explained_variance=0.8615"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Ridge              r2=0.8543  rmse=3390.9710  mae=2502.9640  explained_variance=0.8563"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "Lasso              r2=0.8602  rmse=3322.2339  mae=2415.8938  explained_variance=0.8622"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "ElasticNet         r2=0.8635  rmse=3282.0746  mae=2365.1038  explained_variance=0.8664"}
+{"ts": "2026-08-23T18:15:04", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "SVR                r2=0.9284  rmse=2376.7748  mae=1791.8345  explained_variance=0.9311"}
+{"ts": "2026-08-23T18:15:05", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "DecisionTree       r2=0.8117  rmse=3855.6615  mae=2852.7609  explained_variance=0.8413"}
+{"ts": "2026-08-23T18:15:06", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "RandomForest       r2=0.9298  rmse=2354.1835  mae=1541.0571  explained_variance=0.9301"}
+{"ts": "2026-08-23T18:15:06", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "GradientBoosting   r2=0.9482  rmse=2021.8992  mae=1421.8347  explained_variance=0.9489"}
+{"ts": "2026-08-23T18:15:06", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "KNeighbors         r2=0.9144  rmse=2599.5593  mae=1686.6393  explained_variance=0.9165"}
+{"ts": "2026-08-23T18:15:07", "level": "INFO", "logger": "backend.training.trainer", "request_id": "-", "message": "XGBoost            r2=0.9217  rmse=2486.8246  mae=1790.7722  explained_variance=0.9284"}
+{"ts": "2026-08-23T18:15:07", "level": "INFO", "logger": "backend.registry.store", "request_id": "-", "message": "Registered model mdl_ec30c9a025 (GradientBoosting, regression)"}
+{"ts": "2026-08-23T18:15:07", "level": "INFO", "logger": "backend.training.jobs", "request_id": "-", "message": "Run run_e72499316f finished: best=GradientBoosting score=0.948216"}

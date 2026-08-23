@@ -1,0 +1,45 @@
+{
+  "model_id": "mdl_3c37039456",
+  "path": "/Users/praneethmunukutla/Documents/SVM_practical_practice/ml_suite/storage/models/mdl_3c37039456.joblib",
+  "created_at": "2026-08-23T18:05:25+00:00",
+  "size_kb": 9.3,
+  "algorithm": "SVR",
+  "task": "regression",
+  "dataset_id": "ds_4672ea362d",
+  "dataset_name": "houses",
+  "target_column": "price",
+  "feature_columns": [
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "age_years",
+    "neighborhood",
+    "has_garage"
+  ],
+  "used_features": [
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "age_years",
+    "neighborhood",
+    "has_garage"
+  ],
+  "dropped_features": [],
+  "class_labels": null,
+  "primary_metric": "r2",
+  "metrics": {
+    "r2": 0.889691,
+    "rmse": 42668.156932,
+    "mae": 25765.390897,
+    "explained_variance": 0.889691,
+    "neg_rmse": -42668.156932,
+    "neg_mae": -25765.390897
+  },
+  "best_params": {
+    "kernel": "linear",
+    "gamma": "auto",
+    "epsilon": 0.1,
+    "C": 8.111308
+  },
+  "run_id": "run_200fbe58cd"
+}

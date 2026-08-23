@@ -1,0 +1,23 @@
+{
+  "dataset_id": "ds_fe57ea7c64",
+  "name": "houses_regression",
+  "source": "file",
+  "source_detail": {
+    "filename": "houses_regression.csv",
+    "size_kb": 21.8
+  },
+  "rows": 700,
+  "columns": 7,
+  "column_names": [
+    "area_sqft",
+    "bedrooms",
+    "bathrooms",
+    "age_years",
+    "neighborhood",
+    "has_garage",
+    "price"
+  ],
+  "format": "parquet",
+  "path": "/Users/praneethmunukutla/Documents/SVM_practical_practice/ml_suite/storage/datasets/ds_fe57ea7c64.parquet",
+  "created_at": "2026-08-23T18:12:06+00:00"
+}
