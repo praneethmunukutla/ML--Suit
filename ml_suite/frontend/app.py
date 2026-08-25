@@ -26,6 +26,8 @@ except api.ApiError as exc:
     st.code("cd ml_suite && ./run.sh api", language="bash")
     st.stop()
 
+st.caption(f"Backend: {api.describe_mode()}")
+
 storage = info["storage"]
 cols = st.columns(4)
 cols[0].metric("Datasets", storage["datasets"])
@@ -79,6 +81,7 @@ with right:
 st.divider()
 with st.expander("System details"):
     c1, c2 = st.columns(2)
+    st.caption(f"Backend mode: **{api.mode()}** — {api.describe_mode()}")
     c1.markdown(f"**Python** {info['python']}  \n"
                 f"**XGBoost** {'available' if info['xgboost_available'] else 'not installed'}  \n"
                 f"**Storage backend** {info['storage_backend']}")

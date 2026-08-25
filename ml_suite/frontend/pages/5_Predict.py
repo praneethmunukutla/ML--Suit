@@ -126,13 +126,24 @@ with tab_manage:
     } for m in models])
     st.dataframe(frame, width="stretch", hide_index=True)
     st.markdown("**Use this model from your own code:**")
-    st.code(f'''import requests
+    sample_fields = ", ".join(f'"{c}": ...' for c in required[:3])
+    if api.mode() == "http":
+        st.code(f'''import requests
 
 response = requests.post(
-    "http://127.0.0.1:8000/api/predict/{model_id}",
-    json={{"rows": [{{{", ".join(f'"{c}": ...' for c in required[:3])}, ...}}]}},
+    "{api.API_BASE}/api/predict/{model_id}",
+    json={{"rows": [{{{sample_fields}, ...}}]}},
 )
 print(response.json()["predictions"])''', language="python")
+    else:
+        # No API is being served in embedded mode; load the pipeline directly.
+        st.code(f'''import joblib, pandas as pd
+
+pipeline = joblib.load("storage/models/{model_id}.joblib")
+rows = pd.DataFrame([{{{sample_fields}, ...}}])
+print(pipeline.predict(rows))''', language="python")
+        st.caption("Running in-process, so there is no REST endpoint. Start the "
+                   "API with `./run.sh api` if you want one.")
     if st.button("Delete this model"):
         try:
             api.delete_model(model_id)

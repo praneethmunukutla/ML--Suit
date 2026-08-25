@@ -30,6 +30,50 @@ Logs go to `logs/api.log` and `logs/ui.log`.
 3. Watch the leaderboard fill in, then open **Report**
 4. **Predict** → type a row or upload a file
 
+## Deploying to Streamlit Community Cloud
+
+**Main file path:** `ml_suite/frontend/app.py`
+
+That is the only setting you need. `requirements.txt` at the repository root is
+picked up automatically.
+
+Streamlit Cloud runs a single process, so there is nowhere for the FastAPI
+service to live. The app detects this and runs the backend **in-process**
+instead — same code, no HTTP hop. Nothing to configure.
+
+### How the two modes work
+
+`frontend/lib/api_client.py` resolves its backend once per process:
+
+| `MLSUITE_MODE` | Behaviour |
+|---|---|
+| `auto` *(default)* | Use the API if it answers on `MLSUITE_API`; otherwise run in-process |
+| `http` | Always use the API |
+| `embedded` | Always run in-process |
+
+So `./run.sh` locally uses the API, and Streamlit Cloud silently falls back to
+embedded. The home page shows which mode is active.
+
+To host the API separately instead (Render, Railway, Fly), set a Streamlit
+secret and it will be used automatically:
+
+```toml
+# .streamlit/secrets.toml  →  or the Secrets box in Streamlit Cloud
+MLSUITE_API = "https://your-api.onrender.com"
+```
+
+### What to expect on the free tier
+
+- **Storage is ephemeral.** `storage/` lives on the container's disk, so
+  datasets and trained models are wiped whenever the app sleeps or redeploys.
+  Fine for a demo; this is the point at which MongoDB or Neon stops being
+  optional.
+- **Memory is about 1 GB.** Tuning ten models over a large dataset will be
+  killed. Lower `Search iterations` in the UI, pick fewer models, or set
+  `MLSUITE_SEARCH_ITER` and `MLSUITE_MAX_TRAIN_ROWS` lower.
+- **No authentication.** Anyone with the link can upload data and train. Do not
+  point it at a production database.
+
 ## What it does
 
 **Ingestion** — CSV, TSV, Excel, JSON, Parquet; any SQLAlchemy database

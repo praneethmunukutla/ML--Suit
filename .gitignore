@@ -1,0 +1,29 @@
+# Virtual environments
+ml_suite/.venv/
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Runtime output — regenerated on every run, never source
+ml_suite/logs/
+ml_suite/storage/datasets/
+ml_suite/storage/models/
+ml_suite/storage/runs/
+ml_suite/storage/uploads/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets — never commit connection strings
+.streamlit/secrets.toml
+.env
